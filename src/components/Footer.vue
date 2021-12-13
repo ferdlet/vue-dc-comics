@@ -1,7 +1,16 @@
 <template>
   <footer>
-    <div class="container">
-      
+    <div class="footer-top">
+      <div class="container">
+        <ul>
+          <li v-for="(link, index) in links" :key="index">
+            <a :href="link.url">
+              <img :src="require(`../assets/img/${link.img}`)" :alt="link.text">
+              {{link.text}}
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 </template>
@@ -13,54 +22,29 @@ export default {
     return {
       links: [
         {
-          text: "characters",
+          text: "digital comics",
           url: "#",
-          current: false,
+          img: 'buy-comics-digital-comics.png',
         },
         {
-          text: "comics",
+          text: "dc merchandise",
           url: "#",
-          current: true,
+          img: 'buy-comics-merchandise.png',
         },
         {
-          text: "Movies",
+          text: "subscription",
           url: "#",
-          current: false,
+          img: 'buy-comics-subscriptions.png',
         },
         {
-          text: "tv",
+          text: "comic shop locator",
           url: "#",
-          current: false,
+          img: 'buy-comics-shop-locator.png',
         },
         {
-          text: "games",
+          text: "dc pawer visa",
           url: "#",
-          current: false,
-        },
-        {
-          text: "collectibles",
-          url: "#",
-          current: false,
-        },
-        {
-          text: "videos",
-          url: "#",
-          current: false,
-        },
-        {
-          text: "fans",
-          url: "#",
-          current: false,
-        },
-        {
-          text: "news",
-          url: "#",
-          current: false,
-        },
-        {
-          text: "shop",
-          url: "#",
-          current: false,
+          img: 'buy-dc-power-visa.svg',
         },
       ]
     }
@@ -71,9 +55,38 @@ export default {
 <style scoped lang="scss">
 
   @import '../assets/style/partials/mixins.scss';
+  @import '../assets/style/partials/variables.scss';
 
-  
+  .footer-top {
+    background-color: $dc-blue;
+    height: 130px;
+  }
 
+  .container {
+    height: 100%;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      height: 100%;
+      li {
+      height: 100%;
+        a {
+          color: white;
+          height: 100%;
+          display: flex;
+          text-transform: uppercase;
+          text-decoration: none;
+          @include flex-center;
+          img {
+            margin-right: 15px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
 
 
 </style>

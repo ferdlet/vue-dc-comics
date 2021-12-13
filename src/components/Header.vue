@@ -80,6 +80,7 @@ export default {
 <style scoped lang="scss">
 
   @import '../assets/style/partials/mixins.scss';
+  @import '../assets/style/partials/variables.scss';
 
   .container {
     display: flex;
@@ -108,11 +109,12 @@ export default {
             text-decoration: none;
             text-transform: uppercase;
             font-size: 14px;
+            font-weight: bold;
             @include flex-center;
             color: #333;
             &.active {
-              color: #0282F9;
-              border-bottom: 4px solid #0282F9;
+              color: $dc-blue;
+              border-bottom: 4px solid $dc-blue;
             }
             &:hover {
               background-color: #ddd;
