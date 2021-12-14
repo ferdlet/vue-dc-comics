@@ -15,9 +15,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @import '../assets/style/partials/variables.scss';
+
     main {
-        height: 150px;
-        background-color: #1C1C1C;
+      height: 150px;
+      background-color: $dc-gray;
     }
     h1 {
         color: white;
