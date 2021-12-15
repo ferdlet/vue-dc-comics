@@ -105,13 +105,13 @@ export default {
           list-style: none;
           a {
             height: 100%;
-            padding: 0 20px;
+            padding: 0 10px;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 14px;
             font-weight: bold;
             @include flex-center;
-            color: #333;
+            color: #444;
             &.active {
               color: $dc-blue;
               border-bottom: 4px solid $dc-blue;

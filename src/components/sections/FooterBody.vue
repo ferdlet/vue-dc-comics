@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="footer-body">
+    <section class="footer-body">
       <div class="container">
       <img src="../../assets/img/dc-logo-bg.png" alt="DC Logo" id="logo-footer">
         <div class="container-list">
@@ -16,7 +16,7 @@
         </div>
 
       </div>
-    </div>
+    </section>
   </footer>
 </template>
 

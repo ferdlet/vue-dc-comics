@@ -1,29 +1,25 @@
 <template>
   <main>
-      <div class="container">
-        <h1>
-            Content
-        </h1>          
-      </div>
+      <Jumbotron/>
+      <CurrentSeries/>
   </main>
 </template>
 
 <script>
+import Jumbotron from './sections/Jumbotron.vue'
+import CurrentSeries from './sections/CurrentSeries.vue'
+
+
 export default {
   name: 'Main',
+  components: {
+    Jumbotron,
+    CurrentSeries,
+  }
 }
 </script>
 
 <style scoped lang="scss">
   @import '../assets/style/partials/variables.scss';
-
-    main {
-      height: 150px;
-      background-color: $dc-gray;
-    }
-    h1 {
-        color: white;
-        line-height: 150px;
-    }
     
 </style>

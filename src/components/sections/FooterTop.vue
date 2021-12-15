@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="footer-top">
+    <section class="footer-top">
       <div class="container">
         <ul>
           <li v-for="(link, index) in links" :key="index">
@@ -11,7 +11,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   </footer>
 </template>
 
@@ -60,7 +60,7 @@ export default {
 
   .footer-top {
     background-color: $dc-blue;
-    height: 130px;
+    height: 110px;
     .container {
       height: 100%;
       ul {
@@ -74,14 +74,13 @@ export default {
           a {
             color: white;
             height: 100%;
-            display: flex;
             text-transform: uppercase;
             text-decoration: none;
             font-size: 14px;
             @include flex-center;
             img {
               margin-right: 15px;
-              height: 40px;
+              height: 35px;
             }
           }
         }
