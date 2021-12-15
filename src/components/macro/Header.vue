@@ -2,7 +2,7 @@
   <header>
     <div class="container">
       <div class="logo">
-        <img src="../assets/img/dc-logo.png" alt="Logo">
+        <img src="../../assets/img/dc-logo.png" alt="Logo">
       </div>
       <nav>
         <ul>
@@ -79,8 +79,8 @@ export default {
 
 <style scoped lang="scss">
 
-  @import '../assets/style/partials/mixins.scss';
-  @import '../assets/style/partials/variables.scss';
+  @import '../../assets/style/partials/mixins.scss';
+  @import '../../assets/style/partials/variables.scss';
 
   .container {
     display: flex;

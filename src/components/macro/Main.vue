@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Jumbotron from './sections/Jumbotron.vue'
-import CurrentSeries from './sections/CurrentSeries.vue'
+import Jumbotron from './../sections/Jumbotron.vue'
+import CurrentSeries from './../sections/CurrentSeries.vue'
 
 
 export default {
@@ -20,6 +20,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @import '../assets/style/partials/variables.scss';
+  @import '../../assets/style/partials/variables.scss';
     
 </style>

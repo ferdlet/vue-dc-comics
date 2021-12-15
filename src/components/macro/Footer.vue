@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import FooterTop from './sections/FooterTop.vue'
-import FooterBody from './sections/FooterBody.vue'
-import FooterBottom from './sections/FooterBottom.vue'
+import FooterTop from './../sections/FooterTop.vue'
+import FooterBody from './../sections/FooterBody.vue'
+import FooterBottom from './../sections/FooterBottom.vue'
 
 
 export default {
@@ -20,8 +20,6 @@ export default {
     FooterTop,
     FooterBody,
     FooterBottom,
-
-
   },
   
 }
