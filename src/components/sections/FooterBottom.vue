@@ -45,13 +45,7 @@
 
 export default {
   name: 'FooterBottom',
-  data() {
-    return {
-      
-      
 
-    }
-  }
 }
 </script>
 
